@@ -1,0 +1,428 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(234 234 234 / 40%);
+  font-family: 'Roboto', sans-serif;
+  color: #3d4051;
+}
+
+#video {
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(../assets/videos/marcelo-cabral.mp4) no-repeat;
+	background-size: cover;
+}
+
+header {
+  /* background-image: url('../assets/images/typing.gif'); */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  color: #FCB752;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%
+}
+
+footer {
+  height: 10vh;
+  background-color: #49273C;
+
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  padding: .8rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #49273C !important;
+  transition: background-color 200ms linear;
+  z-index: 5;
+}
+
+nav img {
+  width: 15%;
+  margin-left: 2%;
+  margin-top: 10%;
+  position: absolute;
+  transition: ease-in-out cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+nav.scrolled img {
+  width: 5%;
+  margin-left: 2rem;
+  margin-top: 0rem;
+  position: absolute;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+ul li {
+  padding: 1% 3%;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+ul li a{
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  position: relative;
+}
+
+
+#atuation {
+  background-color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  font-size: 12px;
+  color: #fff;
+  padding: 2px;
+}
+
+.about__images img {
+  position: relative;
+  width: 85%;
+}
+
+.about__images {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.about__images img:nth-child(2) {
+  left: -75%;
+  margin-top: -15%;
+}
+
+.about__content {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.whatsapp{
+  position: fixed;
+  bottom: -5px;
+  right: -60px;
+  z-index: 100;
+}
+
+.whatsapp img {
+  width: 75%;
+}
+
+.float{
+	margin-top:16px;
+}
+
+#map {
+  width: 60%;
+}
+
+.contact__content {
+  width: 35%;
+}
+
+.main {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: revert;
+}
+
+.main__content {
+  width: 32%;
+  align-self: flex-end;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+
+.main__content span {
+  font-weight: bold;
+  color: #FCB752;
+}
+
+.main__content span:last-child {
+  color: #fff;
+  margin-top: 5%;
+}
+
+.atuation__description, .contact__description{
+  font-weight: 300;
+}
+
+.contact__description img {
+  height: 40px;
+  width: 40px;
+  margin-right: .5rem;
+}
+
+ .atuation__images {
+  width: 45%;
+}
+
+.atuation__content {
+  width: 100%;
+}
+
+.atuation__images{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.work__title, .family__title, .citizen__title {
+  font-size: 2rem;
+  font-weight: 900;
+  width: 80%;
+  margin-right: 4%;
+  margin-left: 4%;
+  text-transform: uppercase;
+}
+
+.work img, .family img, .citizen img {
+  width: 8%;
+}
+
+.work, .family, .citizen {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2% 0%;
+  align-items: center;
+  border-bottom: 1px solid #eeee;
+}
+
+.citizen {
+  border-bottom: none !important;
+}
+
+.atuation__images img {
+  width:300px;
+  margin-bottom: 30px;
+  transition: transform .2s;
+}
+
+.atuation__civel:hover, .atuation__familia:hover , .atuation__trabalhista:hover{
+  transform: scale(1.1);
+  z-index: 5;
+}
+/* 
+.atuation__images img:nth-child(2) {
+  margin-top: -95px;
+  margin-left: 90px;
+}
+
+.atuation__images img:nth-child(3) {
+  margin-top: -95px;
+  margin-left: 180px;
+} */
+
+
+.about__button {
+  margin-top: 10%;
+  width: 35%;
+  height: 45px;
+  background-color: #873A7F;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.about__button--hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.about__button--hover:hover {
+  transform: translateY(-5px);
+}
+
+.atuation__familia, .atuation__civel, .atuation__trabalhista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.atuation__images span, .atuation__images a{
+  /* display: none; */
+}
+
+.atuation__familia:hover span, .atuation__civel:hover span, .atuation__trabalhista:hover span {
+  display: block;
+  z-index: 99999;
+  position: absolute;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: #873A7F;
+  background-color: white;
+}
+
+.atuation__familia:hover a, .atuation__civel:hover a, .atuation__trabalhista:hover a {
+  display: block;
+  z-index: 99999;
+  position: absolute;
+  margin-top: 5%;
+}
+
+.atuation__familia {
+  margin-left: -20%;
+}
+
+.atuation__civel {
+  margin-top: -20%;
+}
+
+.atuation__trabalhista {
+  margin-top: -20%;
+  margin-left: 20%;
+}
+
+#contact {
+  background-color: white;
+}
+
+#about {
+  background: url('/assets/images/logo-header.png') no-repeat;
+  background-size: cover;
+  background-color: rgb(234 234 234);
+}
+
+#contact-cta {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+}
+
+#contact-cta h1 {
+  width: 70%;
+  font-size: xxx-large;
+}
+
+.contact-cta__button.about__button--hover {
+  width: 140px;
+  height: 54px;
+  padding: .5rem 1rem;
+  background-color: #873A7F;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.contact__social-medias a img {
+  height: 30px;
+  width: 30px;
+}
+
+.contact__social-medias a {
+  text-decoration: none;
+}
+
+
+a.effect-underline:after {
+  color: #873A7F;
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
